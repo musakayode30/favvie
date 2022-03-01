@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Happy Monkey', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ====================
+   Typography
+   ==================== */
+h1 {
+    color: #F34A8E;
+    text-align: center;
+}
+
+h2 {
+    color: #F34A8E;
+}
+
+h3 {
+    color: #EA54CE;
+}
+
+p {
+    color: #FED3E5;
+    padding: 0 3rem;
+}
+
+/* ====================
+   Layout
+   ==================== */
+.rainbow-bar {
+    padding: 1.5rem;
+    background-image: url(../img/pride-flag.jpg);
+    background-size: cover;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+
+.header-layer {
+    background-color: rgba(0, 0, 0, .35);
+    padding: 2rem 1rem 3rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-link {
+    color: rgb(255, 0, 149);
+    text-decoration: none;
+    display: block;
+    margin: 1em .5em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(187, 0, 90);
+}
+
+.contact {
+    color: black;
+    list-style: none;
+    font-size: .8rem;
+    font-weight: bold;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: #880882;
+}
+
+@media (min-width: 640px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        padding: 0 .5 em;
+    }
+}
+
+@media (max-width: 640px) {
+    .rainbow-bar li {
+        font-size: 1.2em;
+    }
+    .rainbow-bar {
+        padding: 2rem;
+    }
+}
+
+.header-title {
+    color: #F34A8E;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 4px;
+}
+
+.header-names {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.header-names-section {
+    padding: 0 1em;
+    color: white;
+}
+
+.header-names-section h2,
+.header-names-section p,
+.header-names-section h3 {
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EA54CE;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* ==================
+   PICTURES
+   ==================*/
+
+.pictures-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.picture-link {
+    max-width: 45%;
+    max-height: 100vh;
+    display: block;
+}
+
+.picture {
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100%;
+    border:5px solid rgb(255, 0, 149);
+    border-radius: 15px;
+}
+
+.picture:hover,
+.picture:focus,
+.picture-large:hover,
+.picture-large:focus {
+    border: 5px solid rgb(187, 0, 90);
+}
+
+.picture-large-link {
+    max-width: 70vw;
+}
+
+.picture-large {
+    max-height: 100vh;
+    max-width: 100%;
+    border:5px solid rgb(255, 0, 149);
+    border-radius: 15px;
+}
+
+/* ===============
+   SECTION ONE
+   ===============*/
+.section-one {
+    background-image: url(../img/rainbow-background.png);
+    background-color: rgb(250, 207, 217);
+    padding: 2rem; 
+}
+
+.section-one-title {
+    margin-bottom: 2rem;
+    color: rgb(47, 3, 97);
+}
+
+.picture-large-no-border { 
+    max-height: 100vh;
+    max-width: 100%;
+    /* border:5px solid rgb(255, 0, 149); */
+    border-radius: 15px;
+}
+
+.section-one p {
+    color: black;
+    font-weight: bold;
+}
+
+/* ===============
+   SECTION TWO
+   ===============*/
+
+.section-two {
+    background: url(../img/rainbow-bamboo.jpg);
+    background-color: #FFAEC8;
+    padding: 2rem;
+}
+
+.section-two-title {
+    color: rgb(126, 3, 241);
+}
+
+.section-two-subtitle {
+    color: rgb(149, 4, 185);
+}
+
+.section-two p {
+    color: rgb(106, 0, 138);
+    font-weight: bold;
+}
+
+
+/* ===============
+   SECTION THREE
+   ===============*/
+
+.section-three {
+    background-image: url(../img/pink-glitter.jpg);
+    background-color: rgb(250, 207, 217);
+    padding: 2rem;
+}
+
+.section-three-title {
+    color: rgb(92, 3, 114);
+}
+
+.section-three-subtitle {
+    color: rgb(77, 0, 150);
+    margin-bottom: 2rem;
+}
+
+.section-three p {
+    color: rgb(71, 0, 59);
+    margin-bottom: 2rem;
+    padding: 1em;
+    font-weight: bold;
+}
+
+/* ==================
+    SECTION FOUR
+    =================*/
+.section-four {
+    background-image: url(../img/black-glitter.jpg);
+    background-color: rgb(36,36,41);
+    padding: 2rem;
+}
+    
+.section-four-title {
+    color:#F34A8E;
+}
+    
+.section-four-subtitle {
+    color: rgb(233, 139, 176);
+    margin-bottom: 2rem;
+}
+    
+/* .section-three p {
+    color: rgb(71, 0, 59);
+    margin-bottom: 2rem;
+    padding: 1em;
+    font-weight: bold;
+} */
+
+
+/* ======================================
+    SECTION HEADER WITH TWO GOAT PICTURES
+    =====================================*/
+
+.goats-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.goat-picture {
+    max-width: 15%;
+    border-radius: 10px;
+}
+
+.goats-header-text {
+    max-width: 60%;
+}
+
+@media (max-width: 640px) {
+    .goat-picture-two {
+        display: none;
+    }
+    .goats-header {
+        flex-direction: column;
+    }
+    .goat-picture {
+        align-self: center;
+    }
+    .goats-header-text {
+        align-self: center;
+        max-width: 85%;
+    }
+}
